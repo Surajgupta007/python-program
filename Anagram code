@@ -1,0 +1,12 @@
+class Anagramcheck:
+    def __init__(self,str1,str2):
+        self.str1 = str1
+        self.str2 = str2
+str1 = input("enter word: ")
+str2 = input("Enter second string: ")
+if len(str1) != len(str2):
+    print("invalid")
+elif sorted(str1) == sorted(str2):
+    print("Anagram number")
+else:
+    ("not a anagram number")
